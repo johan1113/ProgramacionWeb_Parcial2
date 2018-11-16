@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Roboto:400,500,600');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 20%;
+    padding: 2% 15%;
+    background-color: rgb(180, 180, 180);
+    display: flex;
+    justify-content: space-between;
+    & .brand{
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 700;
+        color: deepskyblue;
+        font-size: 30px;
+    }
+
+    & .navigation{
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        & a{
+            font-family: 'Roboto',sans-serif;
+            font-weight: 500;
+            color: white;
+            text-decoration: none;
+            opacity: 0.7;
+            font-size: 16px;
+        }
+
+        & #selected{
+            opacity: 1;
+        }
+    }
+}
+
+main {
+    width: 100%;
+    height: 80%;
+    padding: 0 15%;
+    & .title{
+        font-family: 'Montserrat',sans-serif;
+        font-weight: 700;
+        color: rgb(150, 150, 150);
+        font-size: 40px;
+        text-align: center;
+    }
+    & .description{
+        width: 100%;
+        &__title{
+            color: rgb(120, 120, 120);
+            font-family: 'Montserrat',sans-serif;
+            font-weight: 600;
+            font-size: 20px;
+            text-align: left;
+        }
+
+        &__text{
+            color: rgb(150, 150, 150);
+            font-family: 'Roboto',sans-serif;
+            font-weight: 300;
+            font-size: 15px;
+            text-align: justify;
+        }
+    }
+}
